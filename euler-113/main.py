@@ -1,4 +1,8 @@
 from tabulate import tabulate
+from sys import setrecursionlimit
+
+
+setrecursionlimit(10000)
 
 
 def get_digits(n, radix=10):
@@ -49,11 +53,11 @@ def print_naive(m, start=1):
 
 def print_naive_complete(m, start=1):
     print(tabulate([[
-        n,
-        is_ascending(n),
-        is_descending(n),
-        not is_bouncy(n)
-    ] for n in range(start, m)], ['n', 'Ascending', 'Descending', 'Not bouncy']))
+                        n,
+                        is_ascending(n),
+                        is_descending(n),
+                        not is_bouncy(n)
+                    ] for n in range(start, m)], ['n', 'Ascending', 'Descending', 'Not bouncy']))
 
 
 def count_descending_naive(m, start=1):
@@ -103,7 +107,8 @@ def count_ascending_clever(digits):
 
 
 def count_non_bouncy_clever(digits):
-    return count_ascending_clever(digits) + count_descending_clever(digits) - digits*9
+    return count_ascending_clever(digits) + count_descending_clever(digits) - digits * 9
+
 
 # print_naive(10000)
 # print(count_descending_naive(1000, 1))
@@ -113,4 +118,5 @@ def count_non_bouncy_clever(digits):
 # print(count_ascending_clever(5))
 
 # print_naive(1000000)
-print(count_non_bouncy_clever(100))
+
+print(count_non_bouncy_clever(1000))
