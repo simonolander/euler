@@ -1,0 +1,225 @@
+@article{Reference1,
+	Abstract = {MS in archaic Sumerian on clay, Sumer, 31st c. BC, 1 tablet, 8,6x8,0x1,7 cm, 5 columns, 41+1 compartments in pictographic script by the scribe GAR.AMA.},
+	Author = {The Shøyen Collection},
+	Journal = {The Shøyen Collection},
+	Month = {3},
+	Number = {MS-2494-4},
+	Numpages = {1},
+	Pages = {MS-2494-4},
+	Title = {Oldest known autograph},
+	Volume = {MS-2494-4},
+	Url = {http://www.schoyencollection.com/scribes-collection/scribal-training/lexical-list-oldest-autograph-ms-2494-4},
+	Year = {2003}}
+
+@article{Reference1,
+	Author = {Menéndez Pidal, Ramón},
+	Journal = {Biblioteca Digital},
+	Numpages = {1},
+	Pages = {1},
+	Title = {Autógrafos inéditos del Cid y de Jimena en dos diplomas de 1098 y 1101, El Cid’s autograph},
+	Url = {http://bibliotecadigital.jcyl.es/i18n/consulta/registro.cmd?id=4240},
+	Year = {1918}}
+
+@article{herbst1977automatic,
+  title={Automatic signature verification based on accelerometry},
+  author={Herbst, NM and Liu, CN},
+  journal={IBM Journal of Research and Development},
+  volume={21},
+  number={3},
+  pages={245--253},
+  year={1977},
+  publisher={IBM}
+}
+
+@article{Reference1,
+	Author = {Anoto},
+	Journal = {Anoto},
+	Title = {The Anoto Wall},
+	Url = {http://www.anoto.com/creative/ecosystem/wall/},
+	Year = {2016}}
+
+@article{Reference1,
+	Author = {Council of the European Union},
+	Journal = {European Council},
+	Month = {1},
+	Number = {SWE-AO-04001},
+	Title = {A digitally stored handwritten signature on a passport},
+	Url = {http://www.consilium.europa.eu/prado/en/SWE-AO-04001/index.html,
+	Year = {2012}}
+
+@inproceedings{ahrary2009new,
+  title={A new on-line signature verification algorithm using Hilbert Scanning patterns},
+  author={Ahrary, Alireza and Kamata, Sei-ichro},
+  booktitle={Consumer Electronics, 2009. ISCE'09. IEEE 13th International Symposium on},
+  pages={276--279},
+  year={2009},
+  organization={IEEE}
+}
+
+@article{putz2015signature,
+  title={Signature verification: A comprehensive study of the hidden signature method},
+  author={Putz-Leszczy{\'n}ska, Joanna},
+  journal={International Journal of Applied Mathematics and Computer Science},
+  volume={25},
+  number={3},
+  pages={659--674},
+  year={2015}
+}
+
+@article{nanni2005ensemble,
+  title={Ensemble of Parzen window classifiers for on-line signature verification},
+  author={Nanni, Loris and Lumini, Alessandra},
+  journal={Neurocomputing},
+  volume={68},
+  pages={217--224},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{gruber2010online,
+  title={Online signature verification with support vector machines based on LCSS kernel functions},
+  author={Gruber, Christian and Gruber, Thiemo and Krinninger, Sebastian and Sick, Bernhard},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)},
+  volume={40},
+  number={4},
+  pages={1088--1100},
+  year={2010},
+  publisher={IEEE}
+}
+
+@article{kundu1998alternatives,
+  title={Alternatives to variable duration HMM in handwriting recognition},
+  author={Kundu, Amlan and He, Yang and Chen, Mou-Yen},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={20},
+  number={11},
+  pages={1275--1280},
+  year={1998},
+  publisher={IEEE}
+}
+
+@misc{smithies1997method,
+  title={Method and system for the verification of handwritten signatures},
+  author={Smithies, C.P.K. and Newman, J.M.},
+  url={https://www.google.ch/patents/US5647017},
+  year={1997},
+  month=jul # "~8",
+  publisher={Google Patents},
+  note={US Patent 5,647,017}
+}
+
+@INPROCEEDINGS{6065554,
+author={M. Liwicki and M. I. Malik and C. E. v. d. Heuvel and X. Chen and C. Berger and R. Stoel and M. Blumenstein and B. Found},
+booktitle={2011 International Conference on Document Analysis and Recognition},
+title={Signature Verification Competition for Online and Offline Skilled Forgeries (SigComp2011)},
+year={2011},
+pages={1480--1484},
+abstract={The Netherlands Forensic Institute and the Institute for Forensic Science in Shanghai are in search of a signature verification system that can be implemented in forensic casework and research to objectify results. We want to bridge the gap between recent technological developments and forensic casework. In collaboration with the German Research Center for Artificial Intelligence we have organized a signature verification competition on datasets with two scripts (Dutch and Chinese) in which we asked to compare questioned signatures against a set of reference signatures. We have received 12 systems from 5 institutes and performed experiments on online and offline Dutch and Chinese signatures. For evaluation, we applied methods used by Forensic Handwriting Examiners (FHEs) to assess the value of the evidence, i.e., we took the likelihood ratios more into account than in previous competitions. The data set was quite challenging and the results are very interesting.},
+keywords={digital signatures;handwriting recognition;natural language processing;text analysis;FHE;German research center;Netherlands Forensic Institute;SigComp2011;artificial intelligence;forensic casework;forensic handwriting examiners;offline skilled forgeries;online skilled forgeries;signature verification competition;Educational institutions;Electronic mail;Feature extraction;Forensics;Forgery;Training;Writing},
+doi={10.1109/ICDAR.2011.294},
+ISSN={1520-5363},
+month={Sept},}
+
+@INPROCEEDINGS{6033304,
+author={Y. Matsuyama},
+booktitle={The 2011 International Joint Conference on Neural Networks},
+title={Hidden Markov model estimation based on alpha-EM algorithm: Discrete and continuous alpha-HMMs},
+year={2011},
+pages={808--816},
+abstract={Fast estimation algorithms for Hidden Markov models (HMMs) for given data are presented. These algorithms start from the alpha-EM algorithm which includes the traditional log-EM as its proper subset. Since existing or traditional HMMs are the outcome of the log-EM, it had been expected that the alpha-HMM would exist. In this paper, it is shown that this foresight is true by using methods of the iteration index shift and likelihood ratio expansion. In each iteration, new update equations utilize one-step past terms which are computed and stored during the previous maximization step. Therefore, iteration speedup directly appears as that of CPU time. Since the new method is theoretically based on the alpha-EM, all of its properties are inherited. There are eight types of alpha-HMMs derived. They are discrete, continuous, semi-continuous and discrete-continuous alpha-HMMs, and both for single and multiple sequences. Using the properties of the alpha-EM algorithm, the speedup property is theoretically analyzed. Experimental results including real world data are given.},
+keywords={expectation-maximisation algorithm;hidden Markov models;alpha-EM algorithm;continuous alpha-HMM;discrete alpha-HMM;hidden Markov model estimation;iteration index shift;likelihood ratio expansion;Algorithm design and analysis;Approximation algorithms;Covariance matrix;Equations;Estimation;Hidden Markov models;Mathematical model},
+doi={10.1109/IJCNN.2011.6033304},
+ISSN={2161-4393},
+month={July},}
+
+@ARTICLE{1450960,
+author={G. D. Forney},
+journal={Proceedings of the IEEE},
+title={The viterbi algorithm},
+year={1973},
+volume={61},
+number={3},
+pages={268--278},
+abstract={The Viterbi algorithm (VA) is a recursive optimal solution to the problem of estimating the state sequence of a discrete-time finite-state Markov process observed in memoryless noise. Many problems in areas such as digital communications can be cast in this form. This paper gives a tutorial exposition of the algorithm and of how it is implemented and analyzed. Applications to date are reviewed. Increasing use of the algorithm in a widening variety of areas is foreseen.},
+keywords={Algorithm design and analysis;Convolutional codes;Decoding;Digital communication;Helium;Markov processes;Recursive estimation;State estimation;Stochastic processes;Viterbi algorithm},
+doi={10.1109/PROC.1973.9030},
+ISSN={0018-9219},
+month={March},}
+
+@MISC{maldives,
+   author={BBC},
+   title={Number of identity theft victims 'rises by a third'},
+   editor={BBC},
+   month={5},
+   year={2015},
+   url={http://www.bbc.com/news/uk-32890979},
+   note={[Online; posted 2015-05-26]},
+}
+
+@MISC{maldives,
+   author={Computer Security Resource Center, NIST},
+   title={Public Key Infrastructures (PKI)},
+   editor={NIST},
+   month={5},
+   year={2004},
+   url={http://csrc.nist.gov/groups/ST/crypto_apps_infra/pki/pkiresearch.html},
+   note={[Online; posted 2004-07-28]},
+}
+
+@book{adams2003understanding,
+  title={Understanding PKI: Concepts, Standards, and Deployment Considerations},
+  author={Adams, C. and Lloyd, S.},
+  isbn={9780672323911},
+  lccn={2002074687},
+  pages={21--36}
+  series={Technology series},
+  url={https://books.google.se/books?id=ERSfUmmthMYC},
+  year={2003},
+  publisher={Addison-Wesley}
+}
+
+@article{putz2010hidden,
+  title={Hidden signature for DTW signature verification in authorizing payment transactions},
+  author={Putz-Leszczy{\'n}ska, Joanna and Kudelski, Micha{\l}},
+  journal={Journal of Telecommunications and Information Technology},
+  pages={59--67},
+  year={2010}
+}
+
+@inproceedings{gillian2011recognition,
+  title={Recognition Of Multivariate Temporal Musical Gestures Using N-Dimensional Dynamic Time Warping.},
+  author={Gillian, Nicholas and Knapp, Benjamin and O'Modhrain, Sile},
+  booktitle={NIME},
+  pages={337--342},
+  year={2011}
+}
+
+@inproceedings{kashi1997line,
+  title={On-line handwritten signature verification using hidden Markov model features},
+  author={Kashi, Ramanujan S and Hu, Jianying and Nelson, WL and Turin, William},
+  booktitle={Document Analysis and Recognition, 1997., Proceedings of the Fourth International conference on},
+  volume={1},
+  pages={253--257},
+  year={1997},
+  organization={IEEE}
+}
+
+@article{faundez2007line,
+  title={On-line signature recognition based on VQ-DTW},
+  author={Faundez-Zanuy, Marcos},
+  journal={Pattern Recognition},
+  volume={40},
+  number={3},
+  pages={981--992},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{sjoholmneeded,
+  title={The Needed Input Data for Accurate On-line Signature Verification},
+  author={Sj{\"o}holm, Thomas}
+  year={2015}
+  published={KTH Royal Institute of Technology}
+  abstract={Signatures have been used to authenticate documents and transactions for over 1500 years and are still being used today. In this project a method for verifying signatures written on a tablet has been developed and tested in order to test whether pressure information is vital for a well performing on-line signature verification systems. First a background study was conducted to learn about the state-of-the-art methods and what features several research systems used, then the method was developed. The method is a Dynamic Time Warp with 8 local features, 2 of them were pressure values or derived from pressure, and 1 global feature. The developed method was tested on SUSig visual corpus containing signatures from 94 persons. The Equal Error Rate (EER) when not using pressure was 5.39 % for random forgeries and 3.24 % for skilled forgeries. EER when using pressure was 5.19 % for random forgeries and 2.80 % for skilled forgeries. The background study concluded that pen inclination is not required for a well performing system. Considering the result of this project and the result of others, it seems that pressure information is not vital, but provide some valuable information that can be used to classify signatures more accurately.}
+}
+
