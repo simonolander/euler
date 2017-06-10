@@ -92,3 +92,5 @@ ENV/
 **/.idea/**
 *.iml
 .DS_Store
+
+**/primes.txt
