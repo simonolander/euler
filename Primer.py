@@ -1,34 +1,70 @@
 from collections import Counter
 
+from Progress import Progress
 
-def product(gen):
+
+def egcd(a, b):
+    if a == 0:
+        return b, 0, 1
+    else:
+        g, y, x = egcd(b % a, a)
+        return g, x - (b // a) * y, y
+
+
+def mod_inv(n, mod):
+    g, x, y = egcd(n % mod, mod)
+    if g != 1:
+        raise Exception('modular inverse does not exist')
+    else:
+        return x % mod
+
+
+def product(gen, mod=None):
     ans = 1
     for g in gen:
         ans *= g
+        if mod:
+            ans %= mod
     return ans
 
 
+def factorial(n, mod=None):
+    return product(range(1, n + 1), mod)
+
+
 class Primer:
-    def __init__(self, max_n):
-        self.max_n = max_n
-        self.factors = list(range(max_n + 1))
-        for n in range(2, len(self.factors)):
-            p = self.factors[n]
+    def __init__(self, max_n, verbose=False):
+        self._max_n = max_n
+        init_progress = Progress(title='Initializing Primer(%d): ' % max_n)
+        if verbose:
+            init_progress.print_progress('Creating factor list...')
+        self._factors = list(range(max_n + 1))
+        self._primes = []
+        for n in range(2, len(self._factors)):
+            p = self._factors[n]
             if n == p:
-                for i in range(2, (len(self.factors) + 1) // p):
-                    self.factors[i*p] = p
-        self.factors[0] = -1
-        self.factors[1] = -1
+                self._primes.append(n)
+                if verbose:
+                    init_progress.print_progress(n)
+                pp = p*2
+                while pp < len(self._factors):
+                    self._factors[pp] = p
+                    pp += p
+
+        self._factors[0] = -1
+        self._factors[1] = -1
+        if verbose:
+            print('Primer(%d) initialized.' % max_n)
 
     def __len__(self):
-        return len(self.factors)
+        return len(self._factors)
 
     def primes(self):
-        return (p for i, p in enumerate(self.factors) if i == p)
+        return self._primes
 
     def factor_int(self, n, distinct=False):
         while n != 1:
-            p = self.factors[n]
+            p = self._factors[n]
             while n % p == 0:
                 yield p
                 n //= p
