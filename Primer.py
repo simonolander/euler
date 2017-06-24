@@ -3,6 +3,15 @@ from collections import Counter
 from Progress import Progress
 
 
+def average(gen):
+    ans = 0
+    length = 0
+    for g in gen:
+        ans += g
+        length += 1
+    return ans / length
+
+
 def egcd(a, b):
     if a == 0:
         return b, 0, 1
@@ -30,6 +39,9 @@ def product(gen, mod=None):
 
 def factorial(n, mod=None):
     return product(range(1, n + 1), mod)
+
+
+fac = factorial
 
 
 class Primer:
