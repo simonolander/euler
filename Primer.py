@@ -1,5 +1,7 @@
 from collections import Counter
 
+import pickle
+
 from Progress import Progress
 
 
@@ -96,6 +98,33 @@ class Primer:
     def count_divisors(self, n):
         factors = self.factor_counter(n)
         return product(p + 1 for p in factors.values())
+
+
+def primer_10_000_000():
+    import os
+    filename = 'primer_10_000_000.pkl'
+    if os.path.isfile(filename):
+        with open(filename, 'rb') as file:
+            return pickle.load(file)
+    else:
+        primer = Primer(10_000_000)
+        with open(filename, 'wb') as file:
+            pickle.dump(primer, file)
+        return primer
+
+
+def primer_1_000_000_000():
+    import os
+    filename = 'primer_1_000_000_000.pkl'
+    if os.path.isfile(filename):
+        with open(filename, 'rb') as file:
+            return pickle.load(file)
+    else:
+        primer = Primer(1_000_000_000, verbose=True)
+        with open(filename, 'wb') as file:
+            pickle.dump(primer, file)
+        return primer
+
 
 if __name__ == '__main__':
     primer = Primer(1000)
