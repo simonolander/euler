@@ -5,6 +5,14 @@ import pickle
 from Progress import Progress
 
 
+def totient_from_primes(prime_powers):
+    return product(pow(p, e - 1) * (p - 1) for p, e in prime_powers.items() if e > 0)
+
+
+def prime_product(prime_powers):
+    return product(pow(p, e) for p, e in prime_powers.items() if e > 0)
+
+
 def average(gen):
     ans = 0
     length = 0
@@ -108,6 +116,19 @@ def primer_10_000_000():
             return pickle.load(file)
     else:
         primer = Primer(10_000_000)
+        with open(filename, 'wb') as file:
+            pickle.dump(primer, file)
+        return primer
+
+
+def primer_100_000_000():
+    import os
+    filename = 'primer_100_000_000.pkl'
+    if os.path.isfile(filename):
+        with open(filename, 'rb') as file:
+            return pickle.load(file)
+    else:
+        primer = Primer(100_000_000, verbose=True)
         with open(filename, 'wb') as file:
             pickle.dump(primer, file)
         return primer
