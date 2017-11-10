@@ -84,6 +84,9 @@ class Primer:
     def primes(self):
         return self._primes
 
+    def is_prime(self, n):
+        return self._factors[n] == n
+
     def factor_int(self, n, distinct=False):
         while n != 1:
             p = self._factors[n]

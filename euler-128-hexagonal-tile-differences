@@ -1,0 +1,116 @@
+from math import sqrt
+
+
+
+def get_start(layer):
+    if layer == 0:
+        return 0
+    if layer == 1:
+        return 1
+    else:
+        return 3 * (layer - 1) * ((layer - 1) + 1) + 1
+
+
+def get_layer(i):
+    if i == 0:
+        return 0
+    else:
+        p = -1/2
+        q = (i - 1) // 3
+        return int(1 + p + sqrt(p**2 + q))
+
+
+def get_north(i):
+    if i == 0:
+        return 1
+    if i == 4:
+        return 0
+    else:
+        layer = get_layer(i)
+        start = get_start(layer)
+        offset = i - start
+        corner = offset // layer
+        corner_offset = offset % layer
+        start_outer = start + layer * 6
+        start_inner = start - (layer - 1) * 6
+
+        if corner == 0:
+            if corner_offset == 0:
+                return start_outer
+            else:
+                return start_outer + offset
+        if corner == 1:
+            if corner_offset == 0:
+                return start_outer + offset
+            else:
+                return i - 1
+        if corner == 2:
+            if corner_offset == 0:
+                return i - 1
+            else:
+                return start_inner + (layer - 1) * 3 - (layer - corner_offset)
+        if corner == 3:
+            if corner_offset == 0:
+                return start - (layer - 1) * 3
+            else:
+                return start_inner + (layer - 1) * 3 + corner_offset
+        if corner == 4:
+            if corner_offset == 0:
+                return i + 1
+            else:
+                return i + 1
+        if corner == 5:
+            if corner_offset == 0:
+                return i + layer + 5 * (layer + 1) + 1
+            else:
+                return start_outer + (layer + 1) * 6 - (layer - corner_offset)
+
+
+def print_n(gen, n):
+    for i, g in enumerate(gen):
+        if i == n:
+            break
+        print(g)
+
+
+def test():
+    assert get_north(0) == 1, get_north(0)
+    assert get_north(1) == 7, get_north(1)
+    assert get_north(2) == 8, get_north(2)
+    assert get_north(3) == 2, get_north(3)
+    assert get_north(4) == 0, get_north(4)
+    assert get_north(5) == 6, get_north(5)
+    assert get_north(6) == 18, get_north(6)
+    assert get_north(7) == 19, get_north(7)
+    assert get_north(8) == 20, get_north(8)
+    assert get_north(9) == 21, get_north(9)
+    assert get_north(10) == 9, get_north(10)
+    assert get_north(11) == 10, get_north(11)
+    assert get_north(12) == 3, get_north(12)
+    assert get_north(13) == 4, get_north(13)
+    assert get_north(14) == 5, get_north(14)
+    assert get_north(15) == 16, get_north(15)
+    assert get_north(16) == 17, get_north(16)
+    assert get_north(17) == 35, get_north(17)
+    assert get_north(18) == 36, get_north(18)
+    assert get_north(19) == 37, get_north(19)
+    assert get_north(20) == 38, get_north(20)
+    assert get_north(21) == 39, get_north(21)
+    assert get_north(22) == 40, get_north(22)
+    assert get_north(23) == 22, get_north(23)
+    assert get_north(24) == 23, get_north(24)
+    assert get_north(25) == 24, get_north(25)
+    assert get_north(26) == 11, get_north(26)
+    assert get_north(27) == 12, get_north(27)
+    assert get_north(28) == 13, get_north(28)
+    assert get_north(29) == 14, get_north(29)
+    assert get_north(30) == 15, get_north(30)
+    assert get_north(31) == 32, get_north(31)
+    assert get_north(32) == 33, get_north(32)
+    assert get_north(33) == 34, get_north(33)
+    assert get_north(34) == 58, get_north(34)
+    assert get_north(35) == 59, get_north(35)
+    assert get_north(36) == 60, get_north(36)
+
+
+test()
