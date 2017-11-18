@@ -47,6 +47,20 @@ def product(gen, mod=None):
     return ans
 
 
+def fibonacci(n, memo=None):
+    if memo is None:
+        memo = {}
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n in memo:
+        return memo[n]
+    ans = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+    memo[n] = ans
+    return ans
+
+
 def factorial(n, mod=None):
     return product(range(1, n + 1), mod)
 
